@@ -12,9 +12,15 @@ module.exports = {
      * }], {});
     */
       return queryInterface.bulkInsert('Users', [{
+
+        email: 'admin@gmail.com',
+        password: "123456789",
         firstName: 'John',
         lastName: 'Doe',
-        email: 'example@example.com',
+        address: "Ngõ 38, P.Tư Đình, Long Biên, Hà Nội",
+        gender:1,
+        keyRole:"R1",
+        typeRole:"ROLE",
         createdAt: new Date(),
         updatedAt: new Date()
       }]);
